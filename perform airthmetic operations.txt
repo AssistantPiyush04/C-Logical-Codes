@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+    int a,b;
+    printf("Enter the first number: ");
+    scanf("%d",&a);
+    printf("Enter the second number: ");
+    scanf("%d",&b);
+    
+    //perform airthmetic operation..
+    printf("sum= %d\n",a+b);
+    printf("minus= %d\n",a-b);
+    printf("multiply= %d\n",a*b);
+    printf("divide= %d\n",a/b);
+    printf("modulas= %d\n",a%b);
+    return 0;
+}
+
+Output -:
+Enter the first number: 6
+Enter the second number: 3
+sum= 9
+minus= 3
+multiply= 18
+divide= 2
+modulas= 0

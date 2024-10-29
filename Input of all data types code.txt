@@ -1,0 +1,38 @@
+//Input of all data types -:
+
+#include <stdio.h>
+int main() 
+{    
+    int integerValue;
+    float floatValue;
+    double doubleValue;
+    char charValue;
+
+    printf("Enter an integer: ");
+    scanf("%d", &integerValue);
+    
+    printf("Enter a float: ");
+    scanf("%f", &floatValue);
+
+    printf("Enter a double: ");
+    scanf("%lf", &doubleValue);
+
+    printf("Enter a character: ");
+    scanf(" %c", &charValue);
+
+    printf("You entered the integer: %d\n", integerValue);
+    printf("You entered the float: %.2f\n", floatValue);
+    printf("You entered the double: %.2lf\n", doubleValue);
+    printf("You entered the character: %c\n", charValue);
+    return 0;
+}
+
+Output -:
+Enter an integer: 12
+Enter a float: 2.4
+Enter a double: 3.555
+Enter a character: p
+You entered the integer: 12
+You entered the float: 2.40
+You entered the double: 3.56
+You entered the character: p
