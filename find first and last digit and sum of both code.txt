@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n, firstDigit, lastDigit, digit,sum=0;
+    printf("Enter any number: ");
+    scanf("%d", &n);
+    lastDigit = n % 10;     
+    digit= (int)log10(n); 
+    firstDigit = (int)(n / pow(10, digit)); 
+    
+    lastDigit=n%10;
+    firstDigit = n;
+    while(n>=10)
+    {
+        n=n/10;
+    }
+    firstDigit = n;
+    sum = firstDigit + lastDigit;
+    printf("First digit = %d\n", firstDigit);
+    printf("Last digit = %d\n", lastDigit);
+    printf("Sum of first and last digit = %d", sum);
+
+    return 0;
+}
+
+Output -:
