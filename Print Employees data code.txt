@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+{
+    //Input Section -:
+    int empid,wh,sa;
+    float salary;
+    printf("Enter the employees id(max 10 chars): ");
+    scanf("%d",&empid);
+    printf("Enter working hours: ");
+    scanf("%d",&wh);
+    printf("Enter salary amount /hr: ");
+    scanf("%d",&sa);
+    
+    //Output section -:
+    printf("Employees Id= %d\n",empid);
+    salary=wh*sa;
+    printf("Salary= U$ %.2f",salary);
+    return 0;
+}
+
+Output -:
+Enter salary amount /hr: 15000
+Employees Id= 342
+Salary= U$ 120000.00
