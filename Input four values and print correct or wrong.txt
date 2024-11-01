@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main()
+{
+    int p, q, r, s;
+
+    // Accept input from the user
+    printf("Input the first integer (even): ");
+    scanf("%d", &p);
+
+    printf("Input the second integer (positive): ");
+    scanf("%d", &q);
+
+    printf("Input the third integer (positive): ");
+    scanf("%d", &r);
+
+    printf("Input the fourth integer (positive): ");
+    scanf("%d", &s);
+
+    // Check the conditions
+    if (p % 2 == 0 && q > r && s > p && (r + s) > (p + q))
+    {
+        printf("Correct values\n");
+    } 
+    else 
+    {
+        printf("Wrong values\n");
+    }
+    return 0;
+}
+
+Output -:
+Input the first integer (even): 8
+Input the second integer (positive): 35
+Input the third integer (positive): 15
+Input the fourth integer (positive): 46
+Correct values
