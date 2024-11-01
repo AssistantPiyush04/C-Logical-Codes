@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() 
+{
+    float weight1, weight2, num1, num2, average;
+
+    // Accept input from the user
+    printf("Enter weight and number of item1: ");
+    scanf("%f %f", &weight1, &num1);
+
+    printf("Enter weight and number of item2: ");
+    scanf("%f %f", &weight2, &num2);
+
+    // Calculate the average value
+    average = ((weight1 * num1) + (weight2 * num2)) / (num1 + num2);
+
+    // Display the result
+    printf("Average Value = %f\n", average);
+    return 0;
+}
+
+Output -:
+Enter weight and number of item1: 15
+5
+Enter weight and number of item2: 25
+4
+Average Value = 19.444445
