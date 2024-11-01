@@ -1,0 +1,26 @@
+#include <stdio.h>
+int main() 
+{
+    int distance;
+    float fuel, averageConsumption;
+
+    // Accept input from the user
+    printf("Input total distance in km: ");
+    scanf("%d", &distance);
+
+    printf("Input total fuel spent in liters: ");
+    scanf("%f", &fuel);
+
+    // Calculate average consumption
+    averageConsumption = distance / fuel;
+
+    // Display the result
+    printf("Average consumption (km/lt) %.3f\n", averageConsumption);
+
+    return 0;
+}
+
+Output -:
+Input total distance in km: 350
+Input total fuel spent in liters: 5
+Average consumption (km/lt) 70.000
