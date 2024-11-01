@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main() 
+{
+    float a, b, c;
+
+    // Accept input from the user
+    printf("Input the first number: ");
+    scanf("%f", &a);
+
+    printf("Input the second number: ");
+    scanf("%f", &b);
+
+    printf("Input the third number: ");
+    scanf("%f", &c);
+
+    // Check if the values can form a triangle
+    if (a + b > c && a + c > b && b + c > a) 
+    {
+        float perimeter = a + b + c;
+        printf("Perimeter = %.1f\n", perimeter);
+    } 
+    else 
+    {
+        printf("The values cannot form a triangle.\n");
+    }
+
+    return 0;
+}
+
+Output -:
+Input the first number: 25
+Input the second number: 15
+Input the third number: 35
+Perimeter = 75.0
