@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() 
+{
+    int num1, num2;
+
+    // Accept input from the user
+    printf("Input the first number: ");
+    scanf("%d", &num1);
+
+    printf("Input the second number: ");
+    scanf("%d", &num2);
+
+    // Check if the numbers are multiples of each other
+    if (num1 % num2 == 0 || num2 % num1 == 0) 
+    {
+        printf("Multiplied !\n");
+    } 
+    else 
+    {
+        printf("Not multiplied !\n");
+    }
+    return 0;
+}
+
+Output -:
+Input the first number: 5
+Input the second number: 15
+Multiplied !
